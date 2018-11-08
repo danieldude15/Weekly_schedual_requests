@@ -1,0 +1,184 @@
+body {
+    background-color: powderblue;
+    direction: rtl;
+    width: 94%;
+    padding: 3%;
+    padding-top: 0%;
+}
+h1   {color: blue;}
+p    {color: #00299e;}
+input[type="checkbox"]:checked {
+    background: #ff4802;
+}
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    background: white;
+    border: 1px solid #555;
+}
+
+/*					ADMIN PANEL			*/
+@page {
+  size: 8.2in 11.7in;
+  size: A4 landscape;
+}
+table.reassignment {
+    display: inline-block;
+    margin-left: 30px;
+    float: right;
+}
+.admin_box {
+    border: 4px solid #167f92;
+    width: 42%;
+    padding: 1%;
+    margin: 1%;
+    float:right;
+    display: inline-block;
+    border-radius: 20px;
+    background: rgba(7, 200, 224, 0.38);
+}
+.admin_box h3 {
+    margin: 4px;
+}
+.menu_bar {direction:rtl;display:bloack;}
+li {
+    font-size: 20px;
+}
+.admin_menu form {
+    margin-bottom: 5px;
+    display:inline;
+}
+.admin_menu {
+    padding: 2px;
+    border-radius: 10px;
+    overflow:auto;
+}
+.admin_menu ul {
+    background: #167f92;
+    float: right;
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+.admin_menu li {
+    display:inline;
+    margin-left:20px;
+}
+.check_image {
+    width: 12px;
+    height:12px;
+}
+@media (max-width: 600px) {
+  .admin_box{
+    width: 97%;
+    margin: 1%;
+    display: block;
+    float: right;
+}
+.sidur_table td {
+    padding:2px;
+}
+.admin_box input[type="text"] {
+    width: 100%;
+}
+.check_image {
+    width: 8px;
+    height:8px;
+}
+.emp_table {
+  font-size: 10px;
+}
+}
+
+/*			END	ADMIN PANEL			*/
+
+
+/* table design in form.php */
+
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 0;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+}
+.responstable td {
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: right;
+  margin: 0;
+  padding:0;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 0;
+  }
+}
+/* end of table design for form.php */
+
+/* table design for printing sidur for all */
+
+.sidur_table{
+    width: 4.95in;
+    height: 3.58in;
+    margin: 7px;
+    display: inline-block;
+    float: right;
+}
+.sidur_table td {
+	padding:2px;
+}
+@media (max-width: 600px) {
+  .sidur_table{
+    width: 97%;
+    margin: 1%;
+    display: block;
+    float: right;
+}
+.sidur_table td {
+    padding:2px;
+}
+}
